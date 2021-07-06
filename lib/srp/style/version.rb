@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module Groundwork
+module SRP
   module Style
     VERSION = "0.87.1"
   end

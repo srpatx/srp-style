@@ -1,4 +1,4 @@
-# groundwork-style
+# srp-style
 
 Shared style configs for rubocop.
 
@@ -8,7 +8,7 @@ Add this to your application's Gemfile:
 
 ```ruby
 group :development, :test do
-  gem 'groundwork-style', github: 'buildgroundwork/groundwork-style', require: false
+  gem 'srp-style', github: 'srpatx/srp-style', require: false
 end
 ```
 
@@ -18,7 +18,7 @@ Create a `.rubocop.yml` with the following directives (or pick and choose):
 
 ```yaml
 inherit_gem:
-  groundwork-style:
+  srp-style:
     - rubocop.yml
     - rubocop_performance.yml
     - rubocop_rake.yml
@@ -38,5 +38,5 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the Groundwork::Style project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/groundwork-style/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the SRP::Style project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/srpatx/srp-style/blob/master/CODE_OF_CONDUCT.md).
 

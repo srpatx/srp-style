@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-require "groundwork/style/version"
+require "srp/style/version"
 
-module Groundwork
+module SRP
   module Style
   end
 end

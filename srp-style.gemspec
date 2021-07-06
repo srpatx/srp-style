@@ -1,15 +1,15 @@
 # frozen_string_literal: true
 
-require_relative "lib/groundwork/style/version"
+require_relative "lib/srp/style/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "groundwork-style"
-  spec.version       = Groundwork::Style::VERSION
-  spec.authors       = ["Adam Milligan"]
-  spec.email         = ["adam@buildgroundwork.com"]
+  spec.name          = "srp-style"
+  spec.version       = SRP::Style::VERSION
+  spec.authors       = ["Adam Milligan", "Grant Hutchins"]
+  spec.email         = ["adam@buildgroundwork.com", "grant.hutchins@srp-ok.com"]
 
   spec.summary       = "Style rules for Ruby"
-  spec.homepage      = "https://github.com/buildgroundwork/groundwork-style"
+  spec.homepage      = "https://github.com/srpatx/srp-style"
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.7.0")
 
@@ -23,14 +23,14 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   # rubocop 1.16.1 has a bug: https://github.com/rubocop/rubocop/issues/9861
-  spec.add_dependency("rubocop", "~> 1.17")
+  spec.add_dependency("rubocop", "~> 1.18", ">= 1.18.3")
   spec.add_dependency("rubocop-performance", "~> 1.11", ">= 1.11.3")
-  spec.add_dependency("rubocop-rails", "~> 2.11", ">= 2.11.1")
-  spec.add_dependency("rubocop-rake", "~> 0.5", ">= 0.5.1")
+  spec.add_dependency("rubocop-rails", "~> 2.11", ">= 2.11.2")
+  spec.add_dependency("rubocop-rake", "~> 0.6")
   spec.add_dependency("rubocop-rspec", "~> 2.4")
   spec.add_dependency("rubocop-thread_safety", "~> 0.4", ">= 0.4.2")
 
-  spec.add_development_dependency("rake", "~> 13.0.3")
+  spec.add_development_dependency("rake", "~> 13.0.4")
   spec.add_development_dependency("rspec", "~> 3.10")
 end
 
