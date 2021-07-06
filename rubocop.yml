@@ -71,6 +71,9 @@ Layout/HashAlignment:
 Layout/LineLength:
   Enabled: false
 
+Layout/LineEndStringConcatenationIndentation:
+  Enabled: true
+
 Layout/MultilineArrayBraceLayout:
   Enabled: true
 
@@ -132,6 +135,10 @@ Layout/TrailingEmptyLines:
 Naming/FileName:
   Exclude:
     - 'gems/**/*'
+
+# This would potentially change a lot of code, so we are disabling for now.
+Naming/InclusiveLanguage:
+  Enabled: false
 
 # We want to have symbols that contain underscore-delimited digits
 # (e.g. :some_table_deprecated_2020_11_16)

@@ -53,7 +53,7 @@ RSpec.describe RuboCop::Cop::Layout::SpaceInsideParensPlus, :config do
     end
 
     it "registers an offense for spaces inside parens " \
-      "following a keyword argument with a value" do
+       "following a keyword argument with a value" do
       expect_offense(<<~RUBY)
         def a(foo: nil ); end
                       ^ Space inside parentheses detected.
@@ -126,7 +126,7 @@ RSpec.describe RuboCop::Cop::Layout::SpaceInsideParensPlus, :config do
     end
 
     it "registers an offense for no spaces inside parens " \
-      "following a keyword argument" do
+       "following a keyword argument" do
       expect_offense(<<~RUBY)
         def a(foo:); end
               ^ No space inside parentheses detected.
@@ -143,7 +143,7 @@ RSpec.describe RuboCop::Cop::Layout::SpaceInsideParensPlus, :config do
     end
 
     it "registers an offense for spaces inside parens " \
-      "following a keyword argument with a value" do
+       "following a keyword argument with a value" do
       expect_offense(<<~RUBY)
         def a(foo: nil ); end
               ^ No space inside parentheses detected.
@@ -205,7 +205,7 @@ RSpec.describe RuboCop::Cop::Layout::SpaceInsideParensPlus, :config do
     end
 
     it "registers an offense for spaces inside parens " \
-      "following a keyword argument with a value" do
+       "following a keyword argument with a value" do
       expect_offense(<<~RUBY)
         def a(foo: nil ); end
                       ^ Space inside parentheses detected.
@@ -220,7 +220,7 @@ RSpec.describe RuboCop::Cop::Layout::SpaceInsideParensPlus, :config do
     end
 
     it "registers an offense for no spaces inside parens " \
-      "following a keyword argument" do
+       "following a keyword argument" do
       expect_offense(<<~RUBY)
         def a(foo:); end
                   ^ No space after colon inside parentheses.
