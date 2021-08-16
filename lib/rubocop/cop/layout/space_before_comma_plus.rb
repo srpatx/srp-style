@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require "rubocop/cop/mixin/kwarg_node"
 require_relative "../mixin/space_before_punctuation"
 
@@ -43,7 +41,7 @@ module RuboCop
         include ConfigurableEnforcedStyle
         include KwargNode
 
-        MSG_SPACE_AFTER_COLON = "No space found after colon."
+        MSG_SPACE_AFTER_COLON = "No space found after colon.".freeze
 
         def kind(token)
           "comma" if token.comma?

@@ -244,10 +244,9 @@ Style/ExplicitBlockArgument:
 Style/ExponentialNotation:
   Enabled: true
 
-# This cop crashes on JBuilder templates.
+# Ruby 3 has frozen string literals by default
 Style/FrozenStringLiteralComment:
-  Exclude:
-    - '**/*.jbuilder'
+  EnforcedStyle: never
 
 Style/GlobalStdStream:
   Enabled: true

@@ -1,8 +1,6 @@
-# frozen_string_literal: true
-
 module SRP
   module Style
-    VERSION = "0.87.1"
+    VERSION = "0.87.1".freeze
   end
 end
 

@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # Disable colors in specs
 require "rainbow"
 Rainbow.enabled = false
