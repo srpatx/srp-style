@@ -484,6 +484,9 @@ Lint/AmbiguousBlockAssociation:
 Lint/AmbiguousRange:
   Enabled: true
 
+Lint/AmbiguousOperatorPrecedence:
+  Enabled: true
+
 Lint/BinaryOperatorWithIdenticalOperands:
   Enabled: true
 
@@ -538,6 +541,9 @@ Lint/HashCompareByIdentity:
   Enabled: true
 
 Lint/IdentityComparison:
+  Enabled: true
+
+Lint/IncompatibleIoSelectWithFiberScheduler:
   Enabled: true
 
 Lint/LambdaWithoutLiteralBlock:

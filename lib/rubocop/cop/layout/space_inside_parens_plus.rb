@@ -67,7 +67,7 @@ module RuboCop
         end
 
         def autocorrect(corrector, range)
-          if style == :space || style == :space_after_colon && @kwarg
+          if style == :space || (style == :space_after_colon && @kwarg)
             corrector.insert_before(range, " ")
           else
             corrector.remove(range)
@@ -112,7 +112,7 @@ module RuboCop
         def range_for(token1, token2)
           if style == :space
             space_range_for(token1, token2)
-          elsif style == :no_space || style == :space_after_colon && !@kwarg
+          elsif style == :no_space || (style == :space_after_colon && !@kwarg)
             range_between(token1.end_pos, token2.begin_pos)
           else # :space_after_colon && @kwarg
             range_between(token2.begin_pos, token2.end_pos)
