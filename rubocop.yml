@@ -344,6 +344,12 @@ Style/NilLambda:
 Style/NonNilCheck:
   IncludeSemanticChanges: true
 
+Style/NumberedParameters:
+  Enabled: true
+
+Style/NumberedParametersLimit:
+  Enabled: true
+
 Style/OptionalBooleanParameter:
   Enabled: true
 
@@ -405,6 +411,9 @@ Style/RescueStandardError:
 Style/Semicolon:
   Exclude:
     - spec/**/*
+
+Style/SelectByRegexp:
+  Enabled: true
 
 Style/Send:
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#prefer-public-send'
@@ -581,6 +590,11 @@ Lint/RedundantDirGlobSort:
 Lint/RedundantSafeNavigation:
   Enabled: true
 
+# We don't see the value in disabling the use of string literals for
+# `require_relative` paths
+Lint/RequireRelativeSelfPath:
+  Enabled: false
+
 Lint/SelfAssignment:
   Enabled: true
 
@@ -654,4 +668,11 @@ Metrics/ParameterLists:
 # Gemspec
 #===============
 Gemspec/DateAssignment:
+  Enabled: true
+
+#
+#===============
+# Security
+#===============
+Security/IoMethods:
   Enabled: true
