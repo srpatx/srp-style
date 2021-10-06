@@ -359,6 +359,7 @@ Style/OptionHash:
 Style/PercentLiteralDelimiters:
   PreferredDelimiters:
     default: '[]'
+    '%': '{}'
 
 # This seems to apply entirely to the Hash#has_key? and Hash#has_value? methods.
 # The debate on deprecating these methods seems anything but resolved, and the
