@@ -350,6 +350,9 @@ Style/NumberedParameters:
 Style/NumberedParametersLimit:
   Enabled: true
 
+Style/OpenStructUse:
+  Enabled: true
+
 Style/OptionalBooleanParameter:
   Enabled: true
 
@@ -633,6 +636,9 @@ Lint/UnreachableLoop:
 Lint/UselessMethodDefinition:
   Enabled: true
 
+Lint/UselessRuby2Keywords:
+  Enabled: true
+
 Lint/UselessTimes:
   Enabled: true
 
@@ -671,7 +677,12 @@ Metrics/ParameterLists:
 Gemspec/DateAssignment:
   Enabled: true
 
-#
+# this would require all of our gemspec files to explicitly set the
+# rubygems_mfa_required property. This is enabled by default.
+# https://github.com/rubocop/rubocop/pull/10243
+Gemspec/RequireMFA:
+  Enabled: false
+
 #===============
 # Security
 #===============
