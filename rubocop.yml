@@ -677,11 +677,8 @@ Metrics/ParameterLists:
 Gemspec/DateAssignment:
   Enabled: true
 
-# this would require all of our gemspec files to explicitly set the
-# rubygems_mfa_required property. This is enabled by default.
-# https://github.com/rubocop/rubocop/pull/10243
 Gemspec/RequireMFA:
-  Enabled: false
+  Enabled: true
 
 #===============
 # Security
