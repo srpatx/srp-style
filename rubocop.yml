@@ -132,6 +132,9 @@ Layout/TrailingEmptyLines:
 #===============
 # Naming
 #===============
+Naming/BlockForwarding:
+  Enabled: true
+
 Naming/FileName:
   Exclude:
     - 'gems/**/*'
@@ -244,6 +247,12 @@ Style/ExplicitBlockArgument:
 Style/ExponentialNotation:
   Enabled: true
 
+Style/FileRead:
+  Enabled: true
+
+Style/FileWrite:
+  Enabled: true
+
 # Ruby 3 has frozen string literals by default
 Style/FrozenStringLiteralComment:
   EnforcedStyle: never
@@ -296,6 +305,9 @@ Style/KeywordParametersOrder:
 Style/LambdaCall:
   Exclude:
     - '**/**.json.jbuilder'
+
+Style/MapToHash:
+  Enabled: true
 
 Style/MethodCalledOnDoEndBlock:
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#single-line-blocks'

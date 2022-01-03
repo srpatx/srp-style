@@ -28,6 +28,12 @@ Rails/AfterCommitOverride:
 Rails/AttributeDefaultBlockValue:
   Enabled: true
 
+Rails/CompactBlank:
+  Enabled: true
+
+Rails/DurationArithmetic:
+  Enabled: true
+
 Rails/DynamicFindBy:
   Whitelist:
     # This is a Rails finder method
@@ -107,6 +113,9 @@ Rails/Pluck:
 Rails/PluckInWhere:
   Enabled: true
 
+Rails/RedundantPresenceValidationOnBelongsTo:
+  Enabled: true
+
 Rails/RedundantTravelBack:
   Enabled: true
 
@@ -117,6 +126,9 @@ Rails/RenderPlainText:
   Enabled: true
 
 Rails/RequireDependency:
+  Enabled: true
+
+Rails/RootJoinChain:
   Enabled: true
 
 # No need to enforce brevity over clarity.
