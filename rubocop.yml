@@ -132,8 +132,10 @@ Layout/TrailingEmptyLines:
 #===============
 # Naming
 #===============
+# Brakeman cannot yet handle Ruby 3.1 anonymous block forwarding
 Naming/BlockForwarding:
   Enabled: true
+  EnforcedStyle: explicit
 
 Naming/FileName:
   Exclude:
@@ -151,6 +153,7 @@ Naming/VariableNumber:
 #===============
 # Style
 #===============
+
 Style/AccessorGrouping:
   Enabled: true
 

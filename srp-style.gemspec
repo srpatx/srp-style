@@ -21,14 +21,14 @@ Gem::Specification.new do |spec|
   spec.files = Dir.chdir(File.expand_path(__dir__)) { `git ls-files -z`.split("\x0") }
   spec.require_paths = ["lib"]
 
-  spec.add_dependency("rubocop", "~> 1.24.1", ">= 1.24.0")
-  spec.add_dependency("rubocop-performance", "~> 1.13", ">= 1.13.1")
+  spec.add_dependency("rubocop", "~> 1.25")
+  spec.add_dependency("rubocop-performance", "~> 1.13")
   spec.add_dependency("rubocop-rails", "~> 2.13")
   spec.add_dependency("rubocop-rake", "~> 0.6")
   spec.add_dependency("rubocop-rspec", "~> 2.7")
-  spec.add_dependency("rubocop-thread_safety", "~> 0.4", ">= 0.4.4")
+  spec.add_dependency("rubocop-thread_safety", "~> 0.4")
 
-  spec.add_development_dependency("rake", "~> 13.0.6")
-  spec.add_development_dependency("rspec", "~> 3.10")
+  spec.add_development_dependency("rake")
+  spec.add_development_dependency("rspec")
 end
 
