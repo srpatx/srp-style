@@ -282,6 +282,10 @@ Style/HashExcept:
 Style/HashLikeCase:
   Enabled: true
 
+# Brakeman cannot yet handle Ruby 3.1 shorthand hashes
+Style/HashSyntax:
+  EnforcedShorthandSyntax: never
+
 Style/HashTransformKeys:
   Enabled: true
 
@@ -699,3 +703,4 @@ Gemspec/RequireMFA:
 #===============
 Security/IoMethods:
   Enabled: true
+
