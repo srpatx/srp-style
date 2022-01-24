@@ -13,7 +13,6 @@ AllCops:
     - '**/*.rb'
 
   DisplayCopNames: true
-  TargetRubyVersion: 3.0
 
 #===============
 # Layout
