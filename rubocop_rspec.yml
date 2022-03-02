@@ -17,6 +17,9 @@ RSpec/ContextWording:
     - 'on'
     - which
     - that
+    - and
+    - after
+    - before
 
 RSpec/DescribeClass:
   Exclude:
