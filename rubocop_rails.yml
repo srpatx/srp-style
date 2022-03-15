@@ -94,8 +94,10 @@ Rails/MailerName:
 Rails/MatchRoute:
   Enabled: true
 
+# As of rubocop-rails 2.14.0, this cop does not properly handle migrations with
+# class names that end in a number.s
 Rails/MigrationClassName:
-  Enabled: true
+  Enabled: false
 
 Rails/NegateInclude:
   Enabled: true
