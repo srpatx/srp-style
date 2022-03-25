@@ -119,4 +119,3 @@ RSpec.describe RuboCop::Cop::Layout::SpaceBeforeCommaPlus, :config do
     RUBY
   end
 end
-

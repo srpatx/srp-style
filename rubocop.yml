@@ -126,7 +126,7 @@ Layout/SpaceInsideParensPlus:
   EnforcedStyle: space_after_colon
 
 Layout/TrailingEmptyLines:
-  EnforcedStyle: final_blank_line
+  Enabled: true
 
 #===============
 # Naming

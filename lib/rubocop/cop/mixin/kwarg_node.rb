@@ -16,4 +16,3 @@ module RuboCop
     end
   end
 end
-

@@ -3,4 +3,3 @@ module SRP
     VERSION = "0.87.1".freeze
   end
 end
-

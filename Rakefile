@@ -7,4 +7,3 @@ RSpec::Core::RakeTask.new(:spec)
 RuboCop::RakeTask.new(:rubocop)
 
 task default: %i[spec rubocop]
-

@@ -230,4 +230,3 @@ RSpec.describe RuboCop::Cop::Layout::SpaceInsideParensPlus, :config do
     end
   end
 end
-

@@ -4,4 +4,3 @@ module SRP
   module Style
   end
 end
-

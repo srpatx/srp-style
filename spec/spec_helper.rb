@@ -47,4 +47,3 @@ RSpec.configure do |config|
   end
   # rubocop:enable Style/IfUnlessModifier
 end
-
