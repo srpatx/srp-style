@@ -12,7 +12,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="PROVIDED" name="ast (v2.4.2, rbenv: 3.0.1) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="concurrent-ruby (v1.1.9, rbenv: 3.0.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="diff-lcs (v1.5.0, rbenv: 3.0.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="minitest (v5.15.0, rbenv: 3.0.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack (v2.2.3, rbenv: 3.0.1) [gem]" level="application" />

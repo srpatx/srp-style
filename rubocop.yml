@@ -412,6 +412,9 @@ Style/RedundantFileExtensionInRequire:
 Style/RedundantFetchBlock:
   Enabled: true
 
+Style/RedundantInitialize:
+  Enabled: true
+
 Style/RedundantRegexpCharacterClass:
   Enabled: true
 
@@ -613,6 +616,9 @@ Lint/RedundantDirGlobSort:
   Enabled: true
 
 Lint/RedundantSafeNavigation:
+  Enabled: true
+
+Lint/RefinementImportMethods:
   Enabled: true
 
 # We don't see the value in disabling the use of string literals for
