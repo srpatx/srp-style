@@ -40,10 +40,4 @@ RSpec.configure do |config|
     mocks.syntax = :expect # Disable `should_receive` and `stub`
     mocks.verify_partial_doubles = true
   end
-
-  # rubocop:disable Style/IfUnlessModifier
-  if %w[ruby-head-ascii_spec ruby-head-spec].include?(ENV["CIRCLE_STAGE"])
-    config.filter_run_excluding(broken_on: :ruby_head)
-  end
-  # rubocop:enable Style/IfUnlessModifier
 end

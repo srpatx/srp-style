@@ -106,6 +106,9 @@ RSpec/StubbedMock:
 RSpec/SubjectDeclaration:
   Enabled: true
 
+RSpec/VerifiedDoubleReference:
+  Enabled: true
+
 RSpec/VerifiedDoubles:
   Enabled: false
 
