@@ -66,6 +66,12 @@ Layout/FirstHashElementIndentation:
 Layout/HashAlignment:
   EnforcedLastArgumentHashStyle: ignore_implicit
 
+Layout/LineContinuationLeadingSpace:
+  Enabled: true
+
+Layout/LineContinuationSpacing:
+  Enabled: true
+
 # This is not 1986.
 Layout/LineLength:
   Enabled: false
@@ -242,6 +248,9 @@ Style/EachWithObject:
 Style/EndlessMethod:
   Enabled: true
 
+Style/EnvHome:
+  Enabled: true
+
 # Sometimes using yield is more clear.
 Style/ExplicitBlockArgument:
   Enabled: false
@@ -314,6 +323,9 @@ Style/KeywordParametersOrder:
 Style/LambdaCall:
   Exclude:
     - '**/**.json.jbuilder'
+
+Style/MapCompactWithConditionalBlock:
+  Enabled: true
 
 Style/MapToHash:
   Enabled: true
@@ -536,6 +548,9 @@ Lint/BinaryOperatorWithIdenticalOperands:
 Lint/ConstantDefinitionInBlock:
   Enabled: true
 
+Lint/ConstantOverwrittenInRescue:
+  Enabled: true
+
 Lint/DeprecatedConstants:
   Enabled: true
 
@@ -601,6 +616,9 @@ Lint/MissingSuper:
   Enabled: true
 
 Lint/MixedRegexpCaptureTypes:
+  Enabled: true
+
+Lint/NonAtomicFileOperation:
   Enabled: true
 
 Lint/NoReturnInBeginEndBlocks:
@@ -707,7 +725,7 @@ Metrics/ParameterLists:
 #===============
 # Gemspec
 #===============
-Gemspec/DateAssignment:
+Gemspec/DeprecatedAttributeAssignment:
   Enabled: true
 
 Gemspec/RequireMFA:

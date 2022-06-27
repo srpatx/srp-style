@@ -37,6 +37,9 @@ Rails/CompactBlank:
 Rails/DeprecatedActiveModelErrorsMethods:
   Enabled: true
 
+Rails/DotSeparatedKeys:
+  Enabled: true
+
 Rails/DuplicateAssociation:
   Enabled: true
 
@@ -154,6 +157,9 @@ Rails/RequireDependency:
 Rails/RootJoinChain:
   Enabled: true
 
+Rails/RootPublicPath:
+  Enabled: true
+
 # No need to enforce brevity over clarity.
 Rails/ShortI18n:
   Enabled: false
@@ -162,7 +168,13 @@ Rails/ShortI18n:
 Rails/SquishedSQLHeredocs:
   Enabled: false
 
+Rails/StripHeredoc:
+  Enabled: true
+
 Rails/TimeZoneAssignment:
+  Enabled: true
+
+Rails/ToFormattedS:
   Enabled: true
 
 Rails/TransactionExitStatement:
