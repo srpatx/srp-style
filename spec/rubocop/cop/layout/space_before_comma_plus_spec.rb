@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "spec_helper"
 require "rubocop/cop/layout/space_before_comma_plus"
 
@@ -8,7 +10,7 @@ RSpec.describe RuboCop::Cop::Layout::SpaceBeforeCommaPlus, :config do
   let(:enforced_style) { "no_space" }
 
   it "registers an offense and corrects block argument " \
-     "with space before comma" do
+    "with space before comma" do
     expect_offense(<<~RUBY)
       each { |s , t| }
                ^ Space found before comma.
@@ -31,7 +33,7 @@ RSpec.describe RuboCop::Cop::Layout::SpaceBeforeCommaPlus, :config do
   end
 
   it "registers an offense and corrects method call arg " \
-     "with space before comma" do
+    "with space before comma" do
     expect_offense(<<~RUBY)
       a(1 , 2)
          ^ Space found before comma.
@@ -119,3 +121,4 @@ RSpec.describe RuboCop::Cop::Layout::SpaceBeforeCommaPlus, :config do
     RUBY
   end
 end
+

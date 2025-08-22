@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Disable colors in specs
 require "rainbow"
 Rainbow.enabled = false
@@ -17,7 +19,7 @@ RSpec.configure do |config|
   # to individual examples or groups you care about by tagging them with
   # `:focus` metadata. When nothing is tagged with `:focus`, all examples
   # get run.
-  unless defined?(::TestQueue)
+  unless defined?(TestQueue)
     # See. https://github.com/tmm1/test-queue/issues/60#issuecomment-281948929
     config.filter_run :focus
     config.run_all_when_everything_filtered = true
@@ -40,4 +42,11 @@ RSpec.configure do |config|
     mocks.syntax = :expect # Disable `should_receive` and `stub`
     mocks.verify_partial_doubles = true
   end
+
+  # rubocop:disable Style/IfUnlessModifier
+  if %w[ruby-head-ascii_spec ruby-head-spec].include?(ENV["CIRCLE_STAGE"])
+    config.filter_run_excluding(broken_on: :ruby_head)
+  end
+  # rubocop:enable Style/IfUnlessModifier
 end
+
