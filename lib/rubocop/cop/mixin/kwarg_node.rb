@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module RuboCop
   module Cop
     # Common methods for checking if a token is a kwarg.
@@ -16,3 +18,4 @@ module RuboCop
     end
   end
 end
+
